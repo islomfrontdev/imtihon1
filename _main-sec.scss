@@ -1,0 +1,31 @@
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+@mixin div1($bg) {
+  width: 200px;
+  height: 200px;
+  background-color: $bg;
+}
+
+.box {
+  @extend %flex;
+  div {
+    @extend %div;
+  }
+}
+.box1 {
+  @extend %flex;
+  .div1 {
+    @include div1($bg: green);
+  }
+  .div2 {
+    @include div1($bg: orange);
+  }
+}

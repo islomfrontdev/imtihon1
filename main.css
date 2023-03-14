@@ -1,0 +1,26 @@
+header h1 {
+  color: red;
+}
+
+.box1, .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.box1 .div1 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+.box1 .div2 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
